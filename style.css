@@ -1,10 +1,4 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-}
+
 
 .container {
     display: flex;
@@ -21,6 +15,14 @@ body {
     border: 1px solid hsl(0, 97%, 38%);
     border-radius: 10px;
     margin-left: auto;
+    background-color: #333; 
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
 }
 
 img {
@@ -31,16 +33,16 @@ img {
 h1 {
     text-align: center;
     margin-bottom: 10px;
-    color: white; /* Texto blanco */
+    color: white; 
 }
 
 input {
-    width: 100%;
+    width: calc(100% - 22px); 
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    color: white; /* Texto blanco */
+    color: white; 
 }
 
 #login-button {
@@ -56,13 +58,13 @@ input {
 
 a {
     text-decoration: none;
-    color: #fff; /* Texto blanco */
+    color: #fff; 
 }
 
 p {
     text-align: center;
     margin-top: 10px;
-    color: white; /* Texto blanco */
+    color: white; 
 }
 
 .social-buttons {
@@ -75,22 +77,218 @@ p {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 70px; /* Tamaño del ícono */
+    font-size: 70px; 
 }
-/* Estilos para los iconos de Font Awesome */
+
 .fa-google,
 .fa-instagram,
 .fa-facebook {
-    color: white; /* Color blanco para los iconos */
+    color: white; 
 }
-.login-form {
-    width: 400px;
-    padding: 20px;
-    border: 1px solid hsl(0, 97%, 38%);
-    border-radius: 10px;
+input[type="email"], input[type="password"] { color: black;  background-color: white;  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/* segunda pagina*/
+#welcome-page {
+    background-image: url('imgfondo.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    font-family: sans-serif; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    color: red; 
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.actions .action-button:nth-child(2) {
     margin-left: auto;
-    background-color: #333; /* Cambia el color de fondo del cuadro a verde */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px; 
+}
+
+.item {
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.item img {
+    width: 200px; 
+    height: auto; 
+}
+
+.stars {
+    margin-top: 5px;
+}
+
+.star {
+    color: rgb(42, 10, 184);
+    font-size: 20px;
+}
+
+.description p {
+    margin-top: 5px;
+    color: black; 
+}
+
+button {
+    margin-top: 10px;
+}
+
+.centrado {
+    position: absolute;
+    top: 23%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue; 
+}
+
+.centrado-dos {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red; 
+}
+
+.centrado-tres {
+    position: absolute;
+    top: 35%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green; 
 }
 
 
 
+
+.body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.actions .action-button:last-child {
+    margin-left: auto;
+}
+
+.actions .action-button:last-child i {
+    margin-right: 5px;
+}
+
+.left-background,
+.right-background {
+    background-image: url('hoja.png'); 
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 100vh; 
+    width: 50%; 
+}
+
+.left-background {
+    background-position: left center; 
+    float: left; 
+}
+
+.right-background {
+    background-position: right bottom; 
+    float: right; 
+}
+
+.background-container {
+    background: 
+        url('imagen33.jpg') center top / cover no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(gray, gray);
+    padding-top: 50px; 
+}
+
+.container {
+    position: relative;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%); 
+    display: flex;
+    align-items: flex-start; 
+}
+
+.image-container img {
+    width: 200px; 
+    height: auto;
+}
+
+.description p {
+    margin-top: 5px;
+    color: black; 
+    writing-mode: horizontal-tb;
+    text-align: center; 
+}

@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body id="login-page">
     <div class="container">
-        <img src="esta.png" alt="">
+        <img src="img.png" alt="">
         <div class="login-form">
             <h1>LOGIN</h1>
             <form id="login-form">
@@ -33,7 +33,7 @@
     <script>
         const loginForm = document.getElementById('login-form');
         loginForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evitar el envío del formulario normal
+            event.preventDefault(); 
 
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
