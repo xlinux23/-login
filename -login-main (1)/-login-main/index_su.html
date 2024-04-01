@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Regístrate en #SaboreaYa</title>
+    <link rel="stylesheet" href="style_su.css" />
+    <script src="script2.js"></script>
+  </head>
+  <body>
+    <h1>Regístrate en SaboreaYa</h1>
+    <p>Por favor, diligencia la siguiente información</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <legend>Tipo de cuenta (requerido)</legend>
+        <label><input type="radio" name="account-type" value="personal" class= inline checked onclick="mostrarCamposRestaurante()"> Personal</label>
+        <label><input type="radio" name="account-type" value="restaurant" class= inline onclick="mostrarCamposRestaurante()"> Restaurante</label>
+      </fieldset>
+      <fieldset class="personal-field">
+        <label for="first-name">Primer nombre: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Apellidos: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="phone">Ingresa tu número de celular (sin código de país): <input id="phone" name="phone" type="text" required /></label>
+        <label for="email">Ingresa tu correo electrónico: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Crea una nueva contraseña: <input id="new-password" name="new-password" type="password" pattern="[a-z0-9]{15,}" required /></label>
+      </fieldset>
+      <fieldset class="restaurante-field" style="display: none;">
+        <label>Nombre del restaurante: <input type="text" name="restaurant-name" required></label>
+        <label>Dirección del restaurante: <input type="text" name="restaurant-address" required></label>
+        <label>Número de contacto: <input type="text" name="restaurant-phone" required></label>
+        <label for="referrer">Seleccione su especialidad de comida
+          <select id="referrer" name="referrer" required>
+              <option value="">(select one)</option>
+              <option value="1">Comida rápida</option>
+              <option value="2">Comida paisa</option>
+              <option value="3">Comida mexicana</option>
+              <option value="4">Comida japonesa</option>
+              <option value="5">Comida peruana</option>
+          </select>
+          <label for="celectronico">Ingrese su correo electrónico: <input id="celectronico" name="celectronico" type="email" required /></label>
+          <label for="nueva-password">Crea una nueva contraseña: <input id="nueva-password" name="nueva-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <label for="Términos y condiciones">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">términos y conditiciones</a>
+      </label>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
