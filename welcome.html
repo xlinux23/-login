@@ -6,7 +6,7 @@
     <title>Bienvenido a SaboreaYa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_well.css">
 </head>
 <body>
     <header class="header">
@@ -19,18 +19,24 @@
     </header>
 
     <div id="welcome-page">
+        <main>
         <div class="centrado">
-            <p>DESCUBRE SABORES CERCA DE TI</p>
+            <h1>DESCUBRE SABORES CERCA DE TI</h1>
+            <p>Aquí puedes contactar desde sitios de comida rápida hasta otros de alta cocina</p>
+            <hr>
         </div>
-
-        <div class="centrado-dos">
-            <p>Ecuentra restaurantes cercanos, filtra y reserva facilmente</p>
+        <div class="container">
+            <label for="referrer">Filtra por tipo de comida
+            <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Comida rápida</option>
+                <option value="2">Comida paisa</option>
+                <option value="3">Comida mexicana</option>
+                <option value="4">Comida japonesa</option>
+                <option value="5">Comida peruana</option>
+              </select>
+            </label>
         </div>
-
-        <div class="centrado-tres">
-            <p>Desde comida rapida hasta alta cocina, todo en un solo lugar</p>
-        </div>
-
         <div class="container">
             <div class="item">
                 <img src="imagen1.jpg" alt="Imagen 1">
@@ -44,7 +50,7 @@
                         <span class="star">&#9733;</span>
                         <span class="star">&#9733;</span>
                     </div>
-                    <button onclick="redirectToPage()">visita ahora</button>
+                    <button onclick="redirectToPage()">Contactar</button>
                 </div>
             </div>
 
@@ -59,7 +65,7 @@
                         <span class="star">&#9733;</span>
                         <span class="star">&#9733;</span>
                     </div>
-                    <button onclick="redirectToPage()">visita ahora</button>
+                    <button onclick="redirectToPage()">Contactar</button>
                 </div>
             </div>
 
@@ -75,11 +81,12 @@
                         <span class="star">&#9733;</span>
                         <span class="star">&#9733;</span>
                     </div>
-                    <button onclick="redirectToPage()">visita ahora</button>
+                    <button onclick="redirectToPage()">Contactar</button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="script.js"></script>
 
@@ -89,5 +96,6 @@
             window.location.href = 'segundapagina.html';
         }
     </script>
+    </main>
 </body>
 </html>
