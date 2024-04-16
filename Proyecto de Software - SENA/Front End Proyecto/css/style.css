@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #f50606;
+    --background-color: #333;
+    --text-color: #fff;
+    --border-color: #ccc;
+    --input-background: #fff;
+    --input-text-color: #000;
+    --background-image-url: url('Medellin_fondo.jpeg');
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+.login-form {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin-left: auto;
+    background-color: var(--background-color); 
+}
+
+img {
+    width: 650px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-background);
+    color: var(--input-text-color); 
+}
+
+#login-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color); 
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 70px; 
+}
+
+.fa-google,
+.fa-instagram,
+.fa-facebook {
+    color: var(--text-color); 
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .login-form {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Prefijos de proveedor para compatibilidad entre navegadores */
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
