@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body id="login-page">
+    <h1>SaboreaYa</h1>
     <div class="container">
         <img src="img/fondo pastas.png" alt="">
         <div class="login-form">
             <h1>LOGIN</h1>
             <form id="login-form">
                 <input type="email" placeholder="Email" id="email">
-                <input type="password" placeholder="Contraseña" id="password">
+                <input type="password" placeholder="Contraseña" pattern="[a-z0-5]{8,}" id="password" required>
                 <button type="submit" id="login-button">Iniciar sesión</button>
             </form>
             

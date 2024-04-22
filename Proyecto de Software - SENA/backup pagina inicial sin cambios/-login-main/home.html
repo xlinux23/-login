@@ -8,36 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body id="login-page">
+    <h1>SaboreaYa</h1>
     <div class="container">
-        <img src="img.png" alt="">
-        <div class="login-form">
-            <h1>LOGIN</h1>
+        <img src="img.png" alt="Logo de SaboreaYa">
+        <section class="login-form">
+            <h1>INICIA  SESIÓN</h1>
             <form id="login-form">
-                <input type="email" placeholder="Email" id="email">
-                <input type="password" placeholder="Contraseña" id="password">
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Contraseña" pattern="[a-z0-5]{8,}" id="password" required>
                 <button type="submit" id="login-button">Iniciar sesión</button>
             </form>
             
             <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
             
             <div class="social-buttons">
-                <button class="social-button"><i class="fab fa-google"></i></button>
-                <button class="social-button"><i class="fab fa-instagram"></i></button>
-                <button class="social-button"><i class="fab fa-facebook"></i></button>
+                <button class="social-button" aria-label="Iniciar sesión con Google"><i class="fab fa-google"></i></button>
+                <button class="social-button" aria-label="Iniciar sesión con Instagram"><i class="fab fa-instagram"></i></button>
+                <button class="social-button" aria-label="Iniciar sesión con Facebook"><i class="fab fa-facebook"></i></button>
             </div>
             
-            <p>¿No estás registrado? <a href="#">Regístrate aquí</a></p>
-        </div>
+            <p>¿No estás registrado? <a href="index_su.html">Regístrate aquí</a></p>
+        </section>
     </div>
     <script src="script.js"></script>
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
         const loginForm = document.getElementById('login-form');
         loginForm.addEventListener('submit', function(event) {
             event.preventDefault(); 
-
+    
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
+    
             if (email === '' || password === '') {
                 alert('Por favor, complete todos los campos.');
             } else {
@@ -46,6 +48,7 @@
                 window.location.href = 'welcome.html';
             }
         });
-    </script>
+    });
+</script>
 </body>
 </html>
