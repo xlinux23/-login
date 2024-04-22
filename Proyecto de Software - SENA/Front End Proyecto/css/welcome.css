@@ -5,9 +5,9 @@
     --text-color-highlight: rgb(187, 187, 230);
     --font-family-default: sans-serif;
     --action-button-color: red;
-    --background-image-url: url('Medellin_fondo.jpeg');
+    --background-image-url: url('imgfondo.jpg');
     --background-image-url-left: url('hoja.png');
-    --background-image-url-right: url('imagen33.jpg');
+    --background-image-url-right: url('copas con plantas.jpg');
     --width: 100%;
     --background-color: rgb(166, 106, 235);
 }
