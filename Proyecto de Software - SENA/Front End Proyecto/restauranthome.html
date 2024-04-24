@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/restaurantlogin.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
+    
     <!--Encabezado de página-->
-<header>
-    <a href="#" class="logo">
-        <img src="img/logo.jpeg" alt="logo de la página">
-        <h2 class="nombre restaurante">SaboreaYa</h2>
-    </a>
-    <nav class="enlaces">
-        <a href="restauranthome.html" class="nav">Inicio</a>
-        <a href="" class="nav">Sobre Nosotros</a>
-        <a href="" class="nav">Ayuda</a>
-        <a href="" class="nav">Opciones</a>
-        <a href="login.html" class="nav">Cerrar sesión</a>
-    </nav>
-    <!--Encabezado de página-->
-</header>
-    <div id="restaurantlogin">
-        <!--Título principal y descripción
-            general de la página-->
-        <div class="titulo">
-            <h1><b>Bienvenido, aquí puedes publicitar tu negocio</i></h1>
-                <p>En este sitio podrás compartir tus
-                    productos, como platillos, ubicación del
-                    restaurante, compartir números de contacto,
-                    correo electrónico y mucho más
-                </p>
+
+    <header>
+        <div class="container">
+            <div class="img-logo"><img src="img/logo.jpeg" alt="logo pag"></div>
+            <a href="#" class="logo">
+                <h2 class="nombre restaurante">SaboreaYa</h2>
+            </a>
+            <nav class="enlaces">
+                <a href="restauranthome.html" class="nav">Inicio</a>
+                <a href="" class="nav">Sobre Nosotros</a>
+                <a href="" class="nav">Ayuda</a>
+                <a href="" class="nav">Opciones</a>
+                <a href="login.html" class="nav">Cerrar sesión</a>
+            </nav>
         </div>
-        <!--Sección para crear publicaciones en la página-->
-        <div id="publicaciones">
-            <div>
-                <div class="formulario">
-                    <div class="publicar">
-                        <form>
-                            <h2><b>Publicar</b></h2>
-                            <p>Crea publicaciones, específica los productos
-                                que ofreces, adjunta fotos de referencia,
-                                puedes indicar el precio del mismo y su
-                                contenido:
-                            </p>
-                            <hr>
-                            <br>
-                            <label class="plato" for="titulo"><b>Plato</b></label>
-                            <br>
-                            <input type="text" id="titulo" name="titulo" placeholder="Plato">
-                            <br>
-                            <br>
-                            <label for="producto"><b>Descripción</b></label>
-                            <br>
-                            <textarea id="producto" cols="50" rows="10" placeholder="Descripción plato"></textarea>
-                            <br>
-                            <button class="boton publicar" type="submit"><i>Publicar</i></button>
-                             Adjuntar imagen
-                            <input class="adjuntar imagen" type="file">
-                        </form>
-                        <br>
-                    </div>
-                </div>
-        </div>
-        <!--Tablas-->
+    </header>
+
+    <!--Título principal-->
+
+    <section id="titulo">
+        <h1><b>Bienvenido, aquí puedes publicitar tu negocio</i></h1>
+            <p>En este sitio podrás compartir tus
+                productos, como platillos, ubicación del
+                restaurante, compartir números de contacto,
+                correo electrónico y mucho más
+            </p>
+    </section>
+
+    <!--Crear publicaciones-->
+
+    <section id="publicaciones">
+        <div class="container">
+            <div class="publicar">
+                <form>
+                    <h2><b>Publicar</b></h2>
+                    <p>Crea publicaciones, específica los productos
+                        que ofreces, adjunta fotos de referencia,
+                        puedes indicar el precio del mismo y su
+                        contenido:
+                    </p>
+                    <hr>
+                    <br>
+                    <label class="plato" for="titulo"><b>Plato</b></label>
+                    <br>
+                    <input type="text" id="titulo" name="titulo" placeholder="Plato">
+                    <br>
+                    <br>
+                    <label for="producto"><b>Descripción</b></label>
+                    <br>
+                    <textarea id="producto" cols="50" rows="10" placeholder="Descripción plato"></textarea>
+                    <br>
+                    <button class="boton publicar" type="submit"><i>Publicar</i></button>
+                    Adjuntar imagen
+                    <input class="adjuntar imagen" type="file">
+                </form>
+                <br>
+            </div>
+    </section>
+
+    <!--Sección de tablas-->
+
+    <section id="tablas">
         <div class="tablas">
             <h3 id="datos">Estadísticas</h3>
             <p>Aquí puedes visualizar tus estadísticas, las calificaciones
@@ -158,30 +162,58 @@
             </table>
             <br>
         </div>
-        <!--Pie de página-->
-                <footer>
-                    <!--Redes sociales-->
-                    <div class="social-buttons">
-                        <p>¡Siguenos en nuestras redes sociales!</p>
-                        <ul>
-                            <li class="Facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-                            <li class="Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-                            <li class="Linkedin"></a><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
-                            <li class="X"><i class="fa fa-x-twitter fa-2x" aria-hidden="true"></i></li>
-                            <li class="Whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
-                        </ul>
-                    </div>
-                    <!--Copyright-->
-                    <section class="copyright">
-                        <p>Copyright
-                            <br>Todos los derechos reservados
-                            <br> 
-                            2024
-                            <i class="fa fa-copyright"></i>
-                        </p>
-                    </section>
-                </footer>
-    </div>
+        
+    </section>
+
+    <!--Estadísticas-->
+
+    <section id="estadisticas">
+        <div class="carta">
+            <h3>Tus visitas</h3>
+            <p>Aquí puedes ver la cantidad de visitas de los clientes</p>
+            <button>+ Info</button>
+        </div>
+        <div class="carta">
+            <h3>Tu histórico</h3>
+            <p>Aquí puedes ver la cantidad de visitas de los clientes</p>
+            <button>+ Info</button>
+        </div>
+        <div class="carta">
+            <h3>Opinios de los usuarios</h3>
+            <p>Aquí puedes ver la cantidad de visitas de los clientes</p>
+            <button>+ Info</button>
+        </div>
+    </section>
+    <section id="beneficios">
+        <ul>
+            <li>✅​ Tus ventas pueden crecer</li>
+            <li>✅​ Mayor control de tus productos</li>
+            <li>✅​ Visibilidad</li>
+            <li>✅​ Creatividad</li>
+        </ul>
+    </section>
+
+    <!--Pie de página-->
+
+    <footer>
+        <div class="container">
+
+            <!--Redes sociales-->
+            <div class="social-buttons">
+                <p>¡Siguenos en nuestras redes sociales!</p>
+                <nav>
+                    <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-x-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+            <!--Copyright-->
+            <p>&copy; SaboreaYa 2024</p>
+        </div>
+    </footer>
+
     <script src="js/restauranthome.js"></script>
+    
 </body>
 </html>

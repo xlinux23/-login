@@ -23,21 +23,6 @@ header {
     padding: 10px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h2:hover{
-    color: red;
-}
-
-.logo img{
-    height: 80px;
-    margin-right: 10px;
-    max-width: 100%;
-}
-
 nav a{
     font-weight: 600;
     padding-right: 10px;
@@ -113,7 +98,7 @@ body {
 
 /* Estilo de las tablas*/
 
-div.tablas{
+div .tablas{
     justify-content: center;
     text-align: center;
     font-size: 20px;
@@ -134,21 +119,10 @@ table, th, td {
     border: 1px solid black;
 }
 
-.table i{
-    color: yellow;
-}
-
-@media (max-width:700px){
-    div.tablas{
-        flex-direction: column;
-    }
-    
-}
-
 /* Pie de página */
 
 footer{
-    background-color: orange;
+    background-color: red;
     display: flex;
     justify-items: center;
     justify-content: center;
