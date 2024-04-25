@@ -40,124 +40,28 @@
 
     <section id="publicaciones">
         <div class="container">
-            <h2>Publica <span class="color-ya">Aquí</span></h2>
-                <p>Crea publicaciones, específica los productos
-                    que ofreces, adjunta fotos de referencia,
-                    puedes indicar el precio del mismo y su
-                    contenido:
-                </p>
-                <hr>
+                <h2>Publica <span class="color-ya">Aquí</span></h2>
+                    <p>Crea publicaciones, específica los productos
+                        que ofreces, adjunta fotos de referencia,
+                        puedes indicar el precio del mismo y su
+                        contenido:
+                    </p>
                 <br>
-            <form action="">
-                <label for="titulo"><b>Plato</b></label>
-                <br>
-                <input type="text" id="titulo" name="titulo" placeholder="Plato">
-                <br>
-                <br>
-                <label for="producto"><b>Descripción</b></label>
-                <br>
-                <textarea id="producto" cols="50" rows="10" placeholder="Descripción plato"></textarea>
-                <br>
-                <button class="boton publicar" type="submit"><i>Publicar</i></button>
-                Adjuntar imagen
-                <input class="adjuntar imagen" type="file">
-            </form>
-            <br>
-        </div>
-    </section>
-
-    <!--Sección de tablas-->
-
-    <section id="tablas">
-        <div class="container">
-            <h3>Estadísticas</h3>
-            <p>Aquí puedes visualizar tus estadísticas, las calificaciones
-                de tus usuarios, los productos que estás promocionando y mucho más.
-            </p>
-            <table>
-                <thead> 
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>Mondongo</td>
-                    <td>20.000 pesos</td>
-                </tr>
-                <tr>
-                    <td>Sancocho</td>
-                    <td>18.000 pesos</td>
-                </tr>
-                <tr>
-                    <td>Calentado</td>
-                    <td>10.000 pesos</td>
-                </tr>
-                <tr>
-                    <td>Asados</td>
-                    <td>Desde 15.000 en adelante</td>
-                </tr>
-            </table>
-            <br>
-            <table>
-                <thead>
-                    <th>Reseñas de usuarios</th>
-                </thead>
-                <tr>
-                    <th>Usuario</th>
-                    <th>Comentario</th>
-                    <th>Estrellas</th>
-                </tr>
-                <tr>
-                    <td>Carlos López</td>
-                    <td>La comida me parece excelente</td>
-                    <td>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Juliana Ortiz</td>
-                    <td>Muy buen servicio</td>
-                    <td>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Estefanía Cardona</td>
-                    <td>Deben mejorar la calidad de la comida</td>
-                    <td>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Esteban Arias</td>
-                    <td>Me gustó la atención recibida</td>
-                    <td>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Pablo Ramirez</td>
-                    <td>Mal servicio</td>
-                    <td>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </td>
-                </tr>
-            </table>
+            <div class="formulario">
+                <form action="">
+                    <label for="plato"><b>Plato</b></label>
+                    <br>
+                    <textarea id="plato" cols="0" rows="0" placeholder="Plato"></textarea>
+                    <br>
+                    <br>
+                    <label for="producto"><b>Descripción</b></label>
+                    <br>
+                    <textarea id="producto" cols="50" rows="10" placeholder="Descripción plato"></textarea>
+                    <br>
+                    <input class="adjuntar imagen" type="file">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>    
             <br>
         </div>
     </section>
@@ -169,17 +73,17 @@
             <div class="carta">
                 <h3>Tus visitas</h3>
                 <p>Aquí puedes ver la cantidad de visitas de los clientes</p>
-                <button>+ Info</button>
+                <button>Ir</button>
             </div>
             <div class="carta">
                 <h3>Tu histórico</h3>
                 <p>Aquí puedes ver la cantidad de visitas de los clientes</p>
-                <button>+ Info</button>
+                <button>Ir</button>
             </div>
             <div class="carta">
-                <h3>Opinios de los usuarios</h3>
+                <h3>Opiniones de tus clientes</h3>
                 <p>Aquí puedes ver la cantidad de visitas de los clientes</p>
-                <button>+ Info</button>
+                <button>Ir</button>
             </div>
         </div>
     </section>

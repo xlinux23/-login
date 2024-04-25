@@ -44,7 +44,7 @@ button:hover{
 }
 
 header{
-    background-color: rgba(245, 245, 245, 0.836);
+    background-color: black;
 }
 
 header .logo{
@@ -81,7 +81,7 @@ header a{
 }
 
 header a:hover{
-    color: blueviolet;
+    color: red;
 }
 
 #titulo{
@@ -112,9 +112,70 @@ header a:hover{
     font-weight: lighter;
 }
 
-#publicaciones .container{
+#publicaciones{
+    display: flex;
+    align-items: center;
     text-align: center;
-    padding: 200px 12px;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+
+#publicaciones .container{
+    justify-content: space-around;
+}
+
+label{
+    color: red;
+    text-shadow: white;
+}
+
+
+
+textarea{
+    border-radius: 5px;
+    border: 2px solid gray;
+    
+}
+
+textarea:hover{
+    cursor: text;
+    background-color: #fff1ffd8;
+}
+
+input{
+    margin-top: 20px;
+    color: red;
+    padding: 15px;
+}
+
+input:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#publicaciones button{
+    background-color: red;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+#publicaciones button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+#tablas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    flex-direction: column;
 }
 
 #estadisticas{
