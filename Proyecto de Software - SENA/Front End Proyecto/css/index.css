@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: sans-serif;
@@ -16,6 +18,10 @@ p{font-size: 1.25em;}
 ul{list-style: none;}
 table{font-size: 1.25em;}
 li{font-size: 1.25em;}
+
+.color-ya{
+    color: red;
+}
 
 button{
     font-size: 2em;
@@ -38,17 +44,248 @@ button:hover{
 }
 
 header{
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.836);
 }
 
 header .logo{
-    margin: 0;
-    padding: 25px 30px;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+    padding-right: 20px;
 }
 
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/fondo-plato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#titulo h1{
+    color: gray;
+    font-weight: bold;
+}
+
+#titulo p{
+    color: orange;
+    font-weight: lighter;
+}
+
+#publicaciones .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#estadisticas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#estadisticas .container{
+    padding: 150px 12px;
+}
+
+#estadisticas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#estadisticas p{
+    display: none;
+}
+
+#estadisticas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/copas-plantas.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/salon-comedores.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/comedores-bonuar.jpg");
+}
+
+#beneficios .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#beneficios li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 150px 10px;
+}
+
+.redes-sociales a .fa-facebook{
+    color: #1877f2;
+}
+
+.redes-sociales a .fa-instagram{
+    color: #D43089;
+}
+
+.redes-sociales a .fa-x-twitter{
+    color: rgba(81, 82, 81, 0.849);
+}
+
+.redes-sociales a .fa-whatsapp{
+    color: #4dc247;
+}
+
+
+.redes-sociales nav a i{
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    float: none;
+}
+
+.redes-sociales nav a i:hover.fa-facebook{
+    color: #1877f2;
+    border-radius: 5px solid #1877f2;
+    box-shadow: 0 0 10px #1877f2;
+    transition: all 0.5s ease;
+    border-color: none;
+}
+
+.redes-sociales nav a i:hover.fa-instagram{
+    color: #D43089;
+    border-radius: 5px solid #D43089;
+    box-shadow: 0 0 10px #D43089;
+    transition: all 0.5s ease;
+    border-color: none;
+}
+
+.redes-sociales nav a i:hover.fa-x-twitter{
+    color: white;
+    border-radius: 5px solid white;
+    box-shadow: 0 0 10px white;
+    transition: all 0.5s ease;
+    border-color: none;
+}
+
+.redes-sociales nav a i:hover.fa-whatsapp{
+    color: #4dc247;
+    border-radius: 5px solid #4dc247;
+    box-shadow: 0 0 10px #4dc247;
+    transition: all 0.5s ease;
+    border-color: none;
+}
+
+footer p{
+    color: red;
+    font-weight: bold;
+}
+
+footer .copyright{
+    font-style: italic;
+    color: red;
+    font-weight: lighter;
+}
+
+@media (min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
     
+    header nav{
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    header h2{
+        font-size: 28px;
+        padding: 5px 20px;
+        font-weight: bold;
+        margin-left: 0;
+        padding-left: 1px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        display: flex;
+    }
 }
