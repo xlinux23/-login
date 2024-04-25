@@ -44,7 +44,7 @@ button:hover{
 }
 
 header{
-    background-color: black;
+    background-color: rgba(245, 245, 245, 0.836);
 }
 
 header .logo{
