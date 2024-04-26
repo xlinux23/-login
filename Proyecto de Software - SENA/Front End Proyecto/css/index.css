@@ -125,7 +125,8 @@ header a:hover{
 
 
 #publicaciones .container{
-    justify-content: space-around;
+    justify-content: center;
+    padding: 50px 10px;
 }
 
 label{
@@ -160,49 +161,55 @@ input:hover{
 #publicaciones button{
     background-color: red;
     color: black;
-    margin-bottom: 10px;
-    margin-top: 25px;
 }
 
 #publicaciones button:hover{
     background-color: gray;
     cursor: pointer;
+    padding: 10px 5px;
 }
 
-#tablas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: brown;
-    flex-direction: column;
-}
 
 #estadisticas{
     background-color: rgb(30, 30, 30);
-    color: white;
     text-align: center;
+    align-items: center;
+    display: block;
 }
 
 #estadisticas .container{
-    padding: 150px 12px;
+    padding: 25px 15px;
+    margin: 0;
 }
 
-#estadisticas h2{
-    margin-top: 0;
-    font-size: 3.2em;
+#estadisticas h3{
+    color: white;
+    font-weight: bold;
 }
 
 #estadisticas p{
-    display: none;
+    color: gray;
+    font-weight: bolder;
 }
 
 #estadisticas .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
+    padding: 25px 10px;
+    padding-bottom: 15px;
     margin: 20px;
     border-radius: 15px;
+    border: solid black;
+}
+
+#estadisticas .container button{
+    color: black;
+    background-color: red;
+}
+
+#estadisticas .container button:hover{
+    background-color: gray;
+    cursor: pointer;
 }
 
 .carta:first-child{
@@ -232,14 +239,31 @@ input:hover{
     ,url("img/comedores-bonuar.jpg");
 }
 
+
+#beneficios{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+     url("img/crecimiento.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 #beneficios .container{
     text-align: center;
-    padding: 250px 12px;
+    padding: 20px 15px;
 }
 
 #beneficios li{
     margin: 16px 0px;
     font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: #4dc247;
 }
 
 footer{
@@ -349,4 +373,39 @@ footer .copyright{
         margin-top: 5px;
         display: flex;
     }
+
+    #titulo .container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #estadisticas .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estadisticas p{
+        display: block;
+        font-weight: bold;
+    }
+
+
+    #estadisticas .carta{
+        padding: 50px;
+    }
+
+
+    #beneficios .container{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #beneficios .container{
+        text-align: center;
+
+    }
+    
+
+
 }
