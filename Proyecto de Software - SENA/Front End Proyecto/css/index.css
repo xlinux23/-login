@@ -31,20 +31,25 @@ button{
     border: 2px solid rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
-    background-color: blueviolet;
+    background-color: red;
 }
 
 button:hover{
-    background-color: rgb(101, 33, 165);
+    background-color: darkred;
 }
 
 .container{
     max-width: 1400px;
     margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
+
+/*Encabezado - Menú de pag*/
+
 header{
-    background-color: rgba(245, 245, 245, 0.836);
+    background-color: rgb(59, 59, 59);
 }
 
 header .logo{
@@ -52,12 +57,13 @@ header .logo{
     align-items: center;
     padding-bottom: 0;
     padding-right: 20px;
+    text-shadow: 2px 2px 2px gray;
 }
 
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header .color-ya{
+    text-shadow: 3px 5px 3px black;
+    color: red;
+    font-weight: lighter;
 }
 
 header .container{
@@ -70,19 +76,55 @@ header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px
+    padding-bottom: 25px;
+}
+
+header input{
+    display: flex;
+    padding: 20px 15px;
+    margin: auto;
+    margin-right: 5px;
+    margin-left: 0;
+    margin-bottom: 5px;
+    height: 10px;
+    width: 220px;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 2px 2px black;
+    position: relative;
+}
+
+header input:hover{
+    background-color: beige;
+    color: rgb(29, 29, 29);
+    cursor: text;
+}
+
+header button{
+    position: absolute;
+    margin-left: 70px;
+    width: 10px;
+    height: 45px;
+    border-radius: none;
+    margin-left: 177px;
+    height: 45px;
+    background-color: beige;
+
 }
 
 header a{
     padding: 5px 12px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 650;
     color: black;
 }
 
+
 header a:hover{
-    color: red;
+    font-weight: solid;
 }
+
+/*Sección título*/
 
 #titulo{
     display: flex;
@@ -90,7 +132,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -103,14 +145,22 @@ header a:hover{
 }
 
 #titulo h1{
-    color: gray;
-    font-weight: bold;
+    color: white;
+    font-weight: lighter;
+    font-size: 50px;
+    text-shadow: 5px 3px 0 black;
+
 }
 
 #titulo p{
-    color: orange;
+    color: white;
     font-weight: lighter;
+    margin-bottom: 10px;
+    padding: 20px 50px 20px;
+    text-shadow: 2px 2px 2px black;
 }
+
+/*Sección publicaciones*/
 
 #publicaciones{
     display: flex;
@@ -121,7 +171,6 @@ header a:hover{
     text-align: center;
     color: white;
 }
-
 
 
 #publicaciones .container{
