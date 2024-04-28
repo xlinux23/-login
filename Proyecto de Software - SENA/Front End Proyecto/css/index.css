@@ -1,5 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Gupter:wght@400;500;700&family=Jersey+25&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Titan+One&display=swap');
+
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -18,10 +24,6 @@ p{font-size: 1.25em;}
 ul{list-style: none;}
 table{font-size: 1.25em;}
 li{font-size: 1.25em;}
-
-.color-ya{
-    color: red;
-}
 
 button{
     font-size: 2em;
@@ -45,7 +47,6 @@ button:hover{
     margin-top: 5px;
 }
 
-
 /*Encabezado - Menú de pag*/
 
 header{
@@ -60,16 +61,22 @@ header .logo{
     text-shadow: 2px 2px 2px gray;
 }
 
+
 header .color-ya{
     text-shadow: 3px 5px 3px black;
-    color: red;
-    font-weight: lighter;
+    color: darkred;
+    font-weight: 200;
+}
+
+header span:hover{
+    color: black;
 }
 
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
 }
 
 header nav{
@@ -82,7 +89,6 @@ header nav{
 header input{
     display: flex;
     padding: 20px 15px;
-    margin: auto;
     margin-right: 5px;
     margin-left: 0;
     margin-bottom: 5px;
@@ -92,28 +98,18 @@ header input{
     border: solid 2px black;
     box-shadow: 2px 2px black;
     position: relative;
+    transition: all 4s ease;
 }
 
 header input:hover{
-    background-color: beige;
+    background-color: rgb(185, 185, 174);
     color: rgb(29, 29, 29);
     cursor: text;
 }
 
-header button{
-    position: absolute;
-    margin-left: 70px;
-    width: 10px;
-    height: 45px;
-    border-radius: none;
-    margin-left: 177px;
-    height: 45px;
-    background-color: beige;
-
-}
-
 header a{
     padding: 5px 12px;
+    margin-top: 10px;
     text-decoration: none;
     font-weight: 650;
     color: black;
@@ -122,6 +118,7 @@ header a{
 
 header a:hover{
     font-weight: solid;
+    color: darkred;
 }
 
 /*Sección título*/
@@ -149,81 +146,158 @@ header a:hover{
     font-weight: lighter;
     font-size: 50px;
     text-shadow: 5px 3px 0 black;
+}
 
+#titulo h1{
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#titulo .color-ya{
+    text-shadow: 3px 5px 3px black;
+    color: darkred;
+    font-weight: 600;
 }
 
 #titulo p{
     color: white;
     font-weight: lighter;
-    margin-bottom: 10px;
+    margin-top: 60px;
     padding: 20px 50px 20px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px black;
+    font-size: 25px;
+}
+
+#titulo p{
+    animation-name: move-text;
+    animation-duration: 4s;
+}
+
+@keyframes move-text{
+    from{
+        margin-top: 20%;
+        margin-right: 90%;
+        width: 100%;
+    }
 }
 
 /*Sección publicaciones*/
 
 #publicaciones{
-    display: flex;
+    justify-content: center;
+}
+
+
+#publicaciones .container{
+    padding: 30px 20px;
     align-items: center;
     text-align: center;
     flex-direction: column;
     background-color: black;
     text-align: center;
+}
+
+#publicaciones h2{
+    font-family: 'Literata', sans-serif;
+    font-size: 55px;
     color: white;
+    text-shadow: 2px 2px darkred;
+    margin: 20px 30px;
+    padding: 20px 30px;
+    text-transform: uppercase;
 }
 
-
-#publicaciones .container{
-    justify-content: center;
-    padding: 50px 10px;
+#publicaciones span{
+    color: darkred;
+    text-shadow: 2px 1px white;
 }
 
-label{
+#publicaciones p{
     color: red;
-    text-shadow: white;
+    text-transform: uppercase;
+    margin: 10px 10px;
+    padding: 15px 20px;
+    text-shadow: 0 2px 1px white;
+    font-family: 'Literata', sans-serif;
+    font-weight: 350;
+}
+
+.formulario{
+    padding: 20px 40px;
+    margin: 20px 40px;
+    font-family: 'Literata', sans-serif;
 }
 
 
+form label{
+    color: red;
+    font-size: 25px;
+    font-weight: 200;
+    font-style: italic;
+}
 
-textarea{
+textarea#plato{
+    margin-top: 10px;
     border-radius: 5px;
     border: 2px solid gray;
-    
 }
+
+textarea#producto{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    width: 240px;
+}
+
 
 textarea:hover{
     cursor: text;
-    background-color: #fff1ffd8;
-}
-
-input{
-    margin-top: 20px;
-    color: red;
-    padding: 15px;
-}
-
-input:hover{
-    color: white;
-    cursor: pointer;
+    background-color: rgb(185, 185, 174);
 }
 
 #publicaciones button{
-    background-color: red;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
     color: black;
+}
+
+
+#publicaciones button{
+    background-color: darkred;
+    color: black;
+    padding: 10px 10px;
+    border: 2px solid red;
+    border-radius: 30px;
 }
 
 #publicaciones button:hover{
     background-color: gray;
     cursor: pointer;
-    padding: 10px 5px;
+    padding: 10px 7px;
+    border: 2px solid whitesmoke;
 }
 
+/*Estadisticas*/
 
 #estadisticas{
     background-color: rgb(30, 30, 30);
     text-align: center;
     align-items: center;
     display: block;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 #estadisticas .container{
@@ -234,11 +308,18 @@ input:hover{
 #estadisticas h3{
     color: white;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px black;
 }
 
 #estadisticas p{
     color: gray;
-    font-weight: bolder;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 5px 5px 4px black;
+    font-size: 30px;
+    font-style: italic;
 }
 
 #estadisticas .carta{
@@ -253,12 +334,15 @@ input:hover{
 
 #estadisticas .container button{
     color: black;
-    background-color: red;
+    background-color: darkred;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #estadisticas .container button:hover{
     background-color: gray;
     cursor: pointer;
+    border: 2px solid whitesmoke;
 }
 
 .carta:first-child{
@@ -289,6 +373,8 @@ input:hover{
 }
 
 
+/*Beneficios*/
+
 #beneficios{
     background-image: linear-gradient(
         0deg,
@@ -305,14 +391,32 @@ input:hover{
 #beneficios .container{
     text-align: center;
     padding: 20px 15px;
+    margin: 0;
+    font-family:'Lora', sans-serif;
 }
 
-#beneficios li{
+#beneficios ul li{
     margin: 16px 0px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
-    box-shadow: #4dc247;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px black;
+}
+
+#beneficios ul{
+    animation-duration: 4s;
+    animation-name: list-move;
+    animation-iteration-count: 1;
+}
+
+@keyframes list-move{
+    from{
+        margin-right: 100%;
+        width: 300%;
+    }
+    
+    
 }
 
 footer{
@@ -382,13 +486,17 @@ footer{
 
 footer p{
     color: red;
-    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 footer .copyright{
     font-style: italic;
     color: red;
     font-weight: lighter;
+    margin-top: 20px;
 }
 
 @media (min-width:720px){
