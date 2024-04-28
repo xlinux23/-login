@@ -290,9 +290,9 @@ textarea:hover{
     border: 2px solid whitesmoke;
 }
 
-/*Estadisticas*/
+/*Sitios*/
 
-#estadisticas{
+#sitios{
     background-color: rgb(30, 30, 30);
     text-align: center;
     align-items: center;
@@ -300,12 +300,12 @@ textarea:hover{
     font-family: 'Roboto Slab', sans-serif;
 }
 
-#estadisticas .container{
+#sitios .container{
     padding: 25px 15px;
     margin: 0;
 }
 
-#estadisticas h3{
+#sitios h3{
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -313,7 +313,7 @@ textarea:hover{
     text-shadow: 5px 5px 5px black;
 }
 
-#estadisticas p{
+#sitios p{
     color: gray;
     font-weight: 700;
     margin-bottom: 15px;
@@ -322,7 +322,7 @@ textarea:hover{
     font-style: italic;
 }
 
-#estadisticas .carta{
+#sitios .carta{
     background-position: center center;
     background-size: cover;
     padding: 25px 10px;
@@ -332,14 +332,14 @@ textarea:hover{
     border: solid black;
 }
 
-#estadisticas .container button{
+#sitios .container button{
     color: black;
     background-color: darkred;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#estadisticas .container button:hover{
+#sitios .container button:hover{
     background-color: gray;
     cursor: pointer;
     border: 2px solid whitesmoke;
@@ -537,18 +537,18 @@ footer .copyright{
     }
 
 
-    #estadisticas .container{
+    #sitios .container{
         display: flex;
         justify-content: center;
     }
 
-    #estadisticas p{
+    #sitios p{
         display: block;
         font-weight: bold;
     }
 
 
-    #estadisticas .carta{
+    #sitios .carta{
         padding: 50px;
     }
 
