@@ -51,6 +51,9 @@ button:hover{
 
 header{
     background-color: rgb(59, 59, 59);
+    height: 100%;
+    width: 100%;
+    position: sticky;
 }
 
 header .logo{
@@ -124,6 +127,8 @@ header a:hover{
 /*Sección título*/
 
 #titulo{
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,11 +202,14 @@ header a:hover{
 
 #publicaciones{
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 
 #publicaciones .container{
     padding: 30px 20px;
+    margin: 0;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -214,8 +222,8 @@ header a:hover{
     font-size: 55px;
     color: white;
     text-shadow: 2px 2px darkred;
-    margin: 20px 30px;
-    padding: 20px 30px;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
 }
 
@@ -228,21 +236,23 @@ header a:hover{
     color: red;
     text-transform: uppercase;
     margin: 10px 10px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     text-shadow: 0 2px 1px white;
     font-family: 'Literata', sans-serif;
     font-weight: 350;
 }
 
+
+
 .formulario{
-    padding: 20px 40px;
-    margin: 20px 40px;
+    padding: 20px;
+    margin: 10px;
     font-family: 'Literata', sans-serif;
 }
 
 
 form label{
-    color: red;
+    color: white;
     font-size: 25px;
     font-weight: 200;
     font-style: italic;
@@ -250,15 +260,17 @@ form label{
 
 textarea#plato{
     margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     border: 2px solid gray;
 }
 
 textarea#producto{
+    margin-bottom: 20px;
     margin-top: 10px;
     border-radius: 5px;
     border: 2px solid gray;
-    width: 240px;
+    width: 300px;
 }
 
 
@@ -268,8 +280,8 @@ textarea:hover{
 }
 
 #publicaciones button{
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 20px 20px;
     color: black;
 }
@@ -293,16 +305,19 @@ textarea:hover{
 /*Sitios*/
 
 #sitios{
+    height: 100%;
+    width: 100%;
     background-color: rgb(30, 30, 30);
     text-align: center;
     align-items: center;
     display: block;
+    flex-direction: column;
     font-family: 'Roboto Slab', sans-serif;
 }
 
 #sitios .container{
-    padding: 25px 15px;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
 }
 
 #sitios h3{
@@ -327,7 +342,7 @@ textarea:hover{
     background-size: cover;
     padding: 25px 10px;
     padding-bottom: 15px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 15px;
     border: solid black;
 }
@@ -337,6 +352,7 @@ textarea:hover{
     background-color: darkred;
     margin-top: 10px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 #sitios .container button:hover{
@@ -419,6 +435,8 @@ textarea:hover{
     
 }
 
+/*Pie de página*/
+
 footer{
     text-align: center;
     align-items: center;
@@ -499,16 +517,19 @@ footer .copyright{
     margin-top: 20px;
 }
 
-@media (min-width:720px){
+@media (min-width:800px){
+
+    /*Media Header*/
 
     header{
-        position: fixed;
         width: 100%;
+        position: relative;
     }
 
     header .container{
         flex-direction: row;
         justify-content: space-between;
+        margin: 0;
     }
     
     header nav{
@@ -531,15 +552,48 @@ footer .copyright{
         display: flex;
     }
 
-    #titulo .container{
-        display: flex;
-        justify-content: center;
+    /*Media Título*/
+
+    #titulo{
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
+    #titulo .container{
+        justify-content: center;
+        margin: 10px;
+        position: relative;
+    }
+
+    /*Media Publicaciones*/
+
+    #publicaciones{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    #publicaciones .container{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        position: relative;
+    }
+
+
+    /*Media Sitios*/
+
+    #sitios{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
     #sitios .container{
         display: flex;
         justify-content: center;
+        margin: 0;
     }
 
     #sitios p{
@@ -552,6 +606,13 @@ footer .copyright{
         padding: 50px;
     }
 
+    /*Media Beneficios*/
+
+    #beneficios{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
 
     #beneficios .container{
         flex-direction: row;
@@ -562,7 +623,21 @@ footer .copyright{
         text-align: center;
 
     }
-    
+
+    /*Media Footer*/
+
+    footer{
+        width: 100%;
+        height: 100%;
+        margin: 0x;
+    }
+
+    footer{
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
 
 
 }
+
