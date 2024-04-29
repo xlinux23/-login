@@ -88,29 +88,29 @@ button {
     text-align: center; 
 }
 .centrado {
-    text-align: center; /* Centra el texto horizontalmente */
-    position: absolute; /* Coloca el elemento de forma absoluta */
-    top: 30px; /* Ajusta la posición vertical para que no se superponga con el encabezado */
-    left: 50%; /* Coloca el elemento en la mitad de la pantalla horizontalmente */
-    transform: translate(-50%, 0); /* Centra el elemento con respecto a su propio tamaño */
+    text-align: center;
+    position: absolute; 
+    top: 30px; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
     color: black;
 }
 
 .centrado-dos {
-    text-align: center; /* Centra el texto horizontalmente */
-    position: absolute; /* Coloca el elemento de forma absoluta */
-    top: 50px; /* Ajusta la posición vertical para que esté debajo del primer texto */
-    left: 50%; /* Coloca el elemento en la mitad de la pantalla horizontalmente */
-    transform: translate(-50%, 0); /* Centra el elemento con respecto a su propio tamaño */
+    text-align: center; 
+    position: absolute; 
+    top: 50px; 
+    left: 50%;
+    transform: translate(-50%, 0);
     color: black;
 }
 
 .centrado-tres {
-    text-align: center; /* Centra el texto horizontalmente */
-    position: absolute; /* Coloca el elemento de forma absoluta */
-    top: 70px; /* Ajusta la posición vertical para que esté debajo del segundo texto */
-    left: 50%; /* Coloca el elemento en la mitad de la pantalla horizontalmente */
-    transform: translate(-50%, 0); /* Centra el elemento con respecto a su propio tamaño */
+    text-align: center;
+    position: absolute; 
+    top: 70px; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
     color: black;
 }
 
