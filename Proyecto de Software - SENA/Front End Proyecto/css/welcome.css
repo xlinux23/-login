@@ -1,37 +1,20 @@
-:root {
-    --background-primary: #100c0c;
-    --text-color-primary: white;
-    --text-color-secondary: red;
-    --text-color-highlight: rgb(187, 187, 230);
-    --font-family-default: sans-serif;
-    --action-button-color: red;
-    --background-image-url: url('img/imgfondo.jpg');
-    --background-image-url-left: url('img/fondo-plato.jpg');
-    --background-image-url-right: url('img/copas-plantas.jpg');
-    --width: 100%;
-    --background-color: rgb(166, 106, 235);
-}
-
-body, .body {
-    font-family: var(--font-family-default);
-    margin: 0;
-    padding: 0;
-    color: var(--text-color-primary);
-}
 
 #welcome-page {
-    background-image: var(--background-image-url);
+    background-image: url('../css/img/imgfondo.jpg');
     background-size: cover; 
     background-position: center;
+    color: white;
+    font-family: sans-serif; 
 }
 
-.header, .header-container {
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: #333;
     padding: 10px 20px;
-    color: var(--text-color-primary);
+    color: #dd0404;
 }
 
 .logo {
@@ -46,7 +29,7 @@ body, .body {
 .action-button {
     background-color: transparent;
     border: none;
-    color: var(--action-button-color); 
+    color: red; 
     margin-left: 10px;
     cursor: pointer;
 }
@@ -54,22 +37,24 @@ body, .body {
 .container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin-top: 60px;
-    padding: 10px 0; 
+    margin-top: 60px; 
+    justify-content: center;
+    align-items: center;
 }
 
-.item, .image-container {
+.item {
     text-align: center;
     margin-bottom: 30px; 
 }
 
-.item img, .image-container img {
-    width: 200px; 
+.item img {
+    width: 100%;
     height: auto; 
+    max-width: 300px; 
+    margin-bottom: 10px; 
 }
 
-.stars, .star {
+.stars {
     margin-top: 5px;
 }
 
@@ -77,81 +62,56 @@ body, .body {
     color: rgb(42, 10, 184);
     font-size: 20px;
 }
-
-.description p {
-    margin-top: 5px;
-    color: var(--text-color-primary); 
-}
+ 
 
 button {
     margin-top: 10px;
 }
 
-.centrado {
+.image-container {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%); 
+    display: flex;
+    align-items: flex-start; 
 }
 
+.image-container img {
+    width: 200px; 
+    height: auto;
+}
+
+.description p {
+    margin-top: 5px;
+    color: black; 
+    text-align: center; 
+}
 .centrado {
-    top: 23%; 
-    color: var(--text-color-highlight); 
+    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute; /* Coloca el elemento de forma absoluta */
+    top: 30px; /* Ajusta la posición vertical para que no se superponga con el encabezado */
+    left: 50%; /* Coloca el elemento en la mitad de la pantalla horizontalmente */
+    transform: translate(-50%, 0); /* Centra el elemento con respecto a su propio tamaño */
+    color: black;
 }
 
 .centrado-dos {
-    top: 30%; 
-    color: var(--text-color-secondary); 
+    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute; /* Coloca el elemento de forma absoluta */
+    top: 50px; /* Ajusta la posición vertical para que esté debajo del primer texto */
+    left: 50%; /* Coloca el elemento en la mitad de la pantalla horizontalmente */
+    transform: translate(-50%, 0); /* Centra el elemento con respecto a su propio tamaño */
+    color: black;
 }
 
 .centrado-tres {
-    top: 35%; 
-    color: green; 
+    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute; /* Coloca el elemento de forma absoluta */
+    top: 70px; /* Ajusta la posición vertical para que esté debajo del segundo texto */
+    left: 50%; /* Coloca el elemento en la mitad de la pantalla horizontalmente */
+    transform: translate(-50%, 0); /* Centra el elemento con respecto a su propio tamaño */
+    color: black;
 }
 
-.left-background,
-.right-background {
-    background-repeat: no-repeat;
-    background-size: contain; 
-    height: 100vh; 
-    width: 50%; 
-}
-
-.left-background {
-    background-image: var(--background-image-url-left);
-    background-position: left center; 
-    float: left; 
-}
-
-.right-background {
-    background-image: var(--background-image-url-right);
-    background-position: right bottom; 
-    float: right; 
-}
-
-.background-container {
-    background: 
-        var(--background-image-url-right) center top / cover no-repeat,
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        linear-gradient(gray, gray);
-    padding-top: 50px; 
-}
-
-/* Media queries para responsividad */
-@media (max-width: 768px) {
-    .container, .left-background, .right-background {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-
-    .item, .image-container {
-        width: 100%;
-    }
-}
-
-/* Prefijos de proveedor para compatibilidad entre navegadores */
-.action-button, button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+    
