@@ -56,6 +56,21 @@ console.log(persona)
 persona.nombre = "Nuevo nombre"
 console.log(persona)
 
+// Pruebas de javascript//
+
+let holaMundo;
+holaMundo = 10;
+console.log(holaMundo)
+
+let miPc = {
+    nombre: 'PD-0506',
+    modelo: 'Latitude 7270',
+    marca: 'Dell',
+    Ram: 8,
+}
+
+console.log(miPc)
+
 
 
 
