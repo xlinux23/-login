@@ -1,8 +1,9 @@
+import java.sql.SQLException;
 
 public class Main {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws SQLException {
+    /*
        // Objeto nuevo - clase Clientes
         Clientes myClient = new Clientes("12345", "Jhojan Chalarca", 23, 123456,
                 "Barrio Trinidad, Medellín", "jhojan@gmail.com");
@@ -26,10 +27,14 @@ public class Main {
 
         // Instancia - clase Servicio
 
-        myRequest.mostrarServicio();
+        myRequest.mostrarServicio(); */
+
+
+
+        MySQLConnection.connect();
+
     }
 
 }
-
 
 
