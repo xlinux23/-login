@@ -1,15 +1,13 @@
-import java.awt.*;
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
 public class MySQLConnection {
 
-    public static void connect() throws SQLException{
+    public static Connection connect() throws SQLException{
 
-        // URL DataBase
+        // URL, usuario y contraseña DataBase
 
         String url = "jdbc:mysql://localhost:3306/apprestaurante";
         String user = "root";
@@ -21,12 +19,13 @@ public class MySQLConnection {
 
         // Mensaje de conexión exitosa
 
-        System.out.println("Conexión exitosa");
+        System.out.println("Conexión exitosa en la base de datos");
 
-        // Para cerrar la conexión
+        // Retornar conexión
 
-        connection.close();
+        return connection;
+
+        }
 
     }
 
-}
