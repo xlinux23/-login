@@ -3,7 +3,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ClienteDAO {
-
     // Interacción con la base de datos
 
     public void insertClient(Clientes myClient, Connection connection) throws SQLException{
@@ -28,5 +27,6 @@ public class ClienteDAO {
         statement.close();
 
     }
+
 
 }

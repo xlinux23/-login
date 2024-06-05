@@ -49,9 +49,7 @@ public class Main {
 
         MySQLConnection.connect();
 
-
     }
-
 }
 
 
