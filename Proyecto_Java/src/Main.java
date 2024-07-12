@@ -39,15 +39,38 @@ public class Main {
 
         // Crear objeto ClienteDAO para sincronizar base de datos
 
-        ClienteDAO clienteDAO = new ClienteDAO();
 
-        clienteDAO.insertClient(myClient,connection);
+        // Actualización de datos
 
-        connection.close();
+        System.out.println("\nActualización de cliente");
+        System.out.println("Ingresar el ID del cliente para actualizar");
+
+        // Limpiador de  buffer
+
+        Scanner updateScan = new Scanner(System.in);
+
+        scanner.nextLine();
+
+        System.out.println("Ingrese el nombre a actualizar o a cambiar. ");
+        String nuevoNombre = updateScan.nextLine();
+
+        System.out.println("Ingrese el email a actualizar o a cambiar. ");
+        String newEmail = updateScan.nextLine();
+
+        // Llamar al método ClienteDAO para que se pueda actualizar datos
+
+        ClienteDAO clienteDAO2 = new ClienteDAO(idClient, newEmail, nuevoNombre);
+
+        clienteDAO2.actualizarCliente();
+
+        // clienteDAO.insertClient(myClient,connection);
+
+        MySQLConnection.connect();
 
         scanner.close();
 
-        MySQLConnection.connect();
+        connection.close();
+
 
     }
 }

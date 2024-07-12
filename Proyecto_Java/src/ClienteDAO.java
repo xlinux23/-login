@@ -3,6 +3,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ClienteDAO {
+    public ClienteDAO(String idClient, String newEmail, String nuevoNombre) {
+    }
     // Interacción con la base de datos
 
     public void insertClient(Clientes myClient, Connection connection) throws SQLException{
@@ -29,4 +31,37 @@ public class ClienteDAO {
     }
 
 
+    // Actualizar datos en base de datos
+
+    public void actualizarCliente()
+     throws  SQLException{
+
+    String sql = /*Texto del script mysql*/
+            "UPDATE clients SET name = '?', '?' , email WHERE idClient = ?"
+        ;
+
+    PreparedStatement statement = connection.prepareStatement(sql);
+
+    statement.setString(1,nuevoNombre);
+    statement.setString(2, newEmail);
+    statement.setString(3, idCliente);
+
+    // Ejecutar la actualización - Ejecutar el statement
+
+    int rowsUpdated = statement.executeUpdate();
+
+    if (rowsUpdated > 0){
+        System.out.println("Cliente actualizado exitosamente");
+
+    }
+
+    // Cerrar el statement para finalizar proceso de actualización
+
+    statement.close();
+
+    // Código para ejecutar en Workbench mysql
+
+        /* UPDATE clients SET name = "Daniel", 'daniel@gmail.com' , email WHERE idClient = 123 */
+
+    }
 }
