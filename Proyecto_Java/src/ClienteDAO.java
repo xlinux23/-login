@@ -33,7 +33,7 @@ public class ClienteDAO {
 
     // Actualizar datos en base de datos
 
-    public void actualizarCliente()
+    public void actualizarCliente(String idCliente, String nuevoNombre, String newEmail, Connection connection)
      throws  SQLException{
 
     String sql = /*Texto del script mysql*/
@@ -64,4 +64,38 @@ public class ClienteDAO {
         /* UPDATE clients SET name = "Daniel", 'daniel@gmail.com' , email WHERE idClient = 123 */
 
     }
+
+
+    // Eliminar datos - clientes
+
+    public void eliminarCliente(String idCliente, Connection connection) throws SQLException{
+
+        String sql = "DELETE FROM clients WHERE idCliente = ?;";
+
+        // Script en MySQL =
+
+        // DELETE FROM clients WHERE idCliente = 123;
+
+        PreparedStatement statement = connection.prepareStatement(sql);
+
+        statement.setString(1, idCliente);
+
+        // Ejecución de la eliminación
+
+        statement.executeUpdate();
+
+
+        // Cerrar statement
+
+        statement.close();
+
+
+
+
+
+
+    }
+
+
+
 }

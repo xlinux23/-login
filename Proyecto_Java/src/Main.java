@@ -52,18 +52,29 @@ public class Main {
         scanner.nextLine();
 
         System.out.println("Ingrese el nombre a actualizar o a cambiar. ");
-        String nuevoNombre = updateScan.nextLine();
+        String nuevoNombre = scanner.nextLine();
 
         System.out.println("Ingrese el email a actualizar o a cambiar. ");
-        String newEmail = updateScan.nextLine();
+        String newEmail = scanner.nextLine();
 
         // Llamar al método ClienteDAO para que se pueda actualizar datos
 
-        ClienteDAO clienteDAO2 = new ClienteDAO(idClient, newEmail, nuevoNombre);
+        ClienteDAO clienteDAO = new ClienteDAO(idClient, newEmail, nuevoNombre);
 
-        clienteDAO2.actualizarCliente();
+        clienteDAO.actualizarCliente(nuevoNombre, newEmail, idClient, connection);
 
         // clienteDAO.insertClient(myClient,connection);
+
+
+
+        // Ejecución de eliminar datos
+
+        System.out.println("Eliminar cliente. ");
+        String idClienteDelete = scanner.next();
+
+        scanner.nextLine();
+
+        clienteDAO.eliminarCliente(idClienteDelete, connection);
 
         MySQLConnection.connect();
 
