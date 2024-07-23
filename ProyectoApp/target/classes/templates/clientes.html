@@ -27,13 +27,13 @@
                 <td th:text="${cliente.telefono}"></td>
                 <td th:text="${cliente.correo}"></td>
                 <td>
-                    <a href="">Editar</a>
-                    <a href="">Eliminar</a>
+                    <a href="@{/clientes/editar/{id}(id=${cliente.id})}">Editar</a>
+                    <a href="@{/clientes/eliminar/{id}(id=${cliente.id})}">Eliminar</a>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <a href="clientes.html">Registrar nuevo cliente</a>
+    <a href="/clientes/nuevo">Registrar nuevo cliente</a>
 </body>
 </html>

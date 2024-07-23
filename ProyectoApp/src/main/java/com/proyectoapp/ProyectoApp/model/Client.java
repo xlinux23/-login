@@ -15,7 +15,7 @@ public class Client {
     private  String email;
     private  String phone;
 
-    public void Long getId(){
+    public Long getId(){
       return id;
     }
 
